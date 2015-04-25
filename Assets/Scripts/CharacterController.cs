@@ -17,8 +17,8 @@ public class CharacterController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		float moveX = Input.GetAxis ("Horizontal");
-		float moveY = Input.GetAxis ("Vertical");
+		float moveX = Input.GetAxisRaw ("Horizontal");
+		float moveY = Input.GetAxisRaw ("Vertical");
 
 		anim.SetFloat ("velocityX", moveX);
 		anim.SetFloat ("velocityY", moveY);
